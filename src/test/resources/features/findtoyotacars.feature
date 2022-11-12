@@ -1,10 +1,20 @@
-Feature: Click on the first result of Toyota RAV4 search
+Feature: Get and validate the first search result of the provided car model
   
   User navigates to gumtree website and
-  searched for Toyota RAV4 model and 
-  clicks on first results
+  chooses the make and model then
+  clicks on first results 
+  and validates the car model
 
-  Scenario: Toyora RAV4 first results
-    Given User goes to gumtree website
-    When enters toyota rav4 model and search
-    Then click on the first search result
+  Scenario Outline: Car models first result check
+    Given user goes to gumtree website
+    When user mouseover to cars and vehicles
+    Then user clicks on carsvehiclesutes
+    And select "<Make>" from the make
+    And select "<Model>" from the model
+    And click on the search
+    And read first results and check "<Model>"
+
+    Examples: 
+      | Make   | Model |
+      | BMW    | X7    |
+      | Toyota | RAV4  |

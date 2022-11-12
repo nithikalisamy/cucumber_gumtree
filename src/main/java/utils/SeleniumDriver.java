@@ -21,9 +21,9 @@ public class SeleniumDriver {
 
 	private static FileInputStream fis;
 
-	private static Properties config = new Properties();
+	public static Properties config = new Properties();
 
-	private static Properties OR = new Properties();
+	public static Properties OR = new Properties();
 
 	private static WebDriverWait explicitWait;
 
@@ -78,10 +78,9 @@ public class SeleniumDriver {
 		if (seleniumDriver == null) {
 			seleniumDriver = new SeleniumDriver();
 		}
-
 	}
 
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return driver;
 	}
 
@@ -89,7 +88,7 @@ public class SeleniumDriver {
 		driver.get(url);
 	}
 
-	public static void teadDown() {
+	public static void tearDown() {
 		if (driver != null) {
 			driver.close();
 			driver.quit();

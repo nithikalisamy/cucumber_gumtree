@@ -9,10 +9,44 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,526</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">47,681</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">runners.GumtreeRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1668256631923</td><td rowspan="1">7497</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">runners.GumtreeRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1668264764646</td><td rowspan="2">25939</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">runners.GumtreeRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Toyora RAV4 first results&quot;</td><td>&quot;Click on the first result of Toyota RAV4 search&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">runners.GumtreeRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Car models first result check&quot;</td><td>&quot;Get and validate the first search result of the provided car model&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;header__secondary-navigation-link&quot; href=&quot;/cars&quot;&gt;...&lt;/a&gt; is not clickable at point (502, 215). Other element would receive the click: &lt;img id=&quot;random-hero-img&quot; class=&quot;header__home-hero-image&quot; alt=&quot;&quot; src=&quot;https://static.gumtree.com.au/cached/img/au/homepage/homenew2/6/xxlarge.jpg?v=20220211&quot;&gt;
+  (Session info: chrome=107.0.5304.106)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;DESKTOP-T55QR2A&apos;, ip: &apos;192.168.1.127&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.15.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b634a4a40a3be1c6fc67f248466db798, clickElement {id=cbe1e718-34e2-4463-af0c-a73f6f2290f1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\SugNithi\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55388/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b634a4a40a3be1c6fc67f248466db798)] -&gt; xpath: //a[@class=&apos;header__secondary-navigation-link&apos;][normalize-space()=&apos;Cars, Vans &amp; Utes&apos;]]
+Session ID: b634a4a40a3be1c6fc67f248466db798
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at pages.base.BaseTest.click(BaseTest.java:26)
+	at page.objects.HomePage.clickCarsVehicleVansSubMenu(HomePage.java:14)
+	at stepdefinitions.ToyotaSearch.user_clicks_on_carsvehiclesutes(ToyotaSearch.java:40)
+	at ✽.user clicks on carsvehiclesutes(file:///C:/Users/SugNithi/eclipse-workspace/CucumberGumtree/src/test/resources/features/findtoyotacars.feature:11)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">runners.GumtreeRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Car models first result check&quot;</td><td>&quot;Get and validate the first search result of the provided car model&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertTrue(Assert.java:56)
+	at org.testng.Assert.assertTrue(Assert.java:66)
+	at stepdefinitions.ToyotaSearch.read_first_results_and_check_model(ToyotaSearch.java:67)
+	at ✽.read first results and check &quot;X7&quot;(file:///C:/Users/SugNithi/eclipse-workspace/CucumberGumtree/src/test/resources/features/findtoyotacars.feature:15)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,43 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-12T23:37:11 AEDT" name="Default suite" finished-at="2022-11-12T23:37:19 AEDT" duration-ms="8526">
+  <suite started-at="2022-11-13T01:52:23 AEDT" name="Default suite" finished-at="2022-11-13T01:53:10 AEDT" duration-ms="47681">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-12T23:37:11 AEDT" name="Default test" finished-at="2022-11-12T23:37:19 AEDT" duration-ms="8526">
+    <test started-at="2022-11-13T01:52:23 AEDT" name="Default test" finished-at="2022-11-13T01:53:10 AEDT" duration-ms="47681">
       <class name="runners.GumtreeRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-12T23:37:11 AEDT" name="setUpClass" finished-at="2022-11-12T23:37:11 AEDT" duration-ms="696" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T01:52:23 AEDT" name="setUpClass" finished-at="2022-11-13T01:52:23 AEDT" duration-ms="712" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@afee63]]>
+                <![CDATA[org.testng.TestRunner@2bf3ec4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-12T23:37:11 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-12T23:37:19 AEDT" duration-ms="7497" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T01:52:23 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T01:52:44 AEDT" duration-ms="20676" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Toyora RAV4 first results"]]>
+                <![CDATA["Car models first result check"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Click on the first result of Toyota RAV4 search"]]>
+                <![CDATA["Get and validate the first search result of the provided car model"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at org.testng.Assert.assertTrue(Assert.java:66)
+at stepdefinitions.ToyotaSearch.read_first_results_and_check_model(ToyotaSearch.java:67)
+at ✽.read first results and check "X7"(file:///C:/Users/SugNithi/eclipse-workspace/CucumberGumtree/src/test/resources/features/findtoyotacars.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-12T23:37:19 AEDT" name="tearDownClass" finished-at="2022-11-12T23:37:19 AEDT" duration-ms="284" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T01:52:44 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T01:53:10 AEDT" duration-ms="25939" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Car models first result check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Get and validate the first search result of the provided car model"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="header__secondary-navigation-link" href="/cars">...</a> is not clickable at point (502, 215). Other element would receive the click: <img id="random-hero-img" class="header__home-hero-image" alt="" src="https://static.gumtree.com.au/cached/img/au/homepage/homenew2/6/xxlarge.jpg?v=20220211">
+  (Session info: chrome=107.0.5304.106)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-T55QR2A', ip: '192.168.1.127', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b634a4a40a3be1c6fc67f248466db798, clickElement {id=cbe1e718-34e2-4463-af0c-a73f6f2290f1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\SugNithi\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55388/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b634a4a40a3be1c6fc67f248466db798)] -> xpath: //a[@class='header__secondary-navigation-link'][normalize-space()='Cars, Vans & Utes']]
+Session ID: b634a4a40a3be1c6fc67f248466db798]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="header__secondary-navigation-link" href="/cars">...</a> is not clickable at point (502, 215). Other element would receive the click: <img id="random-hero-img" class="header__home-hero-image" alt="" src="https://static.gumtree.com.au/cached/img/au/homepage/homenew2/6/xxlarge.jpg?v=20220211">
+  (Session info: chrome=107.0.5304.106)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-T55QR2A', ip: '192.168.1.127', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.15.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b634a4a40a3be1c6fc67f248466db798, clickElement {id=cbe1e718-34e2-4463-af0c-a73f6f2290f1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.106, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\SugNithi\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55388}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55388/devtoo..., se:cdpVersion: 107.0.5304.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b634a4a40a3be1c6fc67f248466db798)] -> xpath: //a[@class='header__secondary-navigation-link'][normalize-space()='Cars, Vans & Utes']]
+Session ID: b634a4a40a3be1c6fc67f248466db798
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at pages.base.BaseTest.click(BaseTest.java:26)
+at page.objects.HomePage.clickCarsVehicleVansSubMenu(HomePage.java:14)
+at stepdefinitions.ToyotaSearch.user_clicks_on_carsvehiclesutes(ToyotaSearch.java:40)
+at ✽.user clicks on carsvehiclesutes(file:///C:/Users/SugNithi/eclipse-workspace/CucumberGumtree/src/test/resources/features/findtoyotacars.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T01:53:10 AEDT" name="tearDownClass" finished-at="2022-11-13T01:53:10 AEDT" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

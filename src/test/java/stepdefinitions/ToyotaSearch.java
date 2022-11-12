@@ -64,6 +64,6 @@ public class ToyotaSearch {
 
 		System.out.println("\n\nFirst Result ====> " + returnedText + "\n\n");
 
-		Assert.assertTrue(returnedText.contains("RAV4"));
+		Assert.assertTrue(returnedText.contains(model));
 	}
 }

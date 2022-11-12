@@ -1,3 +1,4 @@
+@cars
 Feature: Get and validate the first search result of the provided car model
   
   User navigates to gumtree website and
@@ -18,3 +19,4 @@ Feature: Get and validate the first search result of the provided car model
       | Make   | Model |
       | BMW    | X7    |
       | Toyota | RAV4  |
+      | Audi   | Q123  |

@@ -9,13 +9,16 @@ import io.cucumber.java.en.When;
 import page.objects.CarVanUteSearchResults;
 import page.objects.CarsVansUtePage;
 import page.objects.HomePage;
+import page.objects.PropertyRealEstate;
 import utils.SeleniumDriver;
 
-public class ToyotaSearch {
+public class StepDefCarMakeModelSearch {
 
 	HomePage homePage = new HomePage();
 	CarsVansUtePage carsVansUtePage = new CarsVansUtePage();
 	CarVanUteSearchResults carVanUteSearchResults = new CarVanUteSearchResults();
+	
+	PropertyRealEstate propertyRealEstate = new PropertyRealEstate();
 
 	@Given("user goes to gumtree website")
 	public void user_goes_to_gumtree_website() {
@@ -27,25 +30,17 @@ public class ToyotaSearch {
 
 	@When("user mouseover to cars and vehicles")
 	public void user_mouseover_to_cars_and_vehicles() {
-		System.out.println("user_mouseover_to_newcars");
-
 		homePage.mouseOverCarsVehicle();
-
-	}
+	}	
 
 	@Then("user clicks on carsvehiclesutes")
 	public void user_clicks_on_carsvehiclesutes() {
-		System.out.println("user_clicks_on_findnewcars");
-
 		homePage.clickCarsVehicleVansSubMenu();
-
 	}
 
 	@And("select {string} from the make")
 	public void select_toyota_from_the_make(String make) {
-
 		carsVansUtePage.selectMake(make);
-
 	}
 
 	@And("select {string} from the model")

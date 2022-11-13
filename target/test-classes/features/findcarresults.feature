@@ -20,3 +20,5 @@ Feature: Get and validate the first search result of the provided car model
       | BMW    | X7    |
       | Toyota | RAV4  |
       | Audi   | Q123  |
+
+ 

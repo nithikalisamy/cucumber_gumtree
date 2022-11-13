@@ -51,6 +51,24 @@ public class BaseTest {
 		new Actions(driver).moveToElement(mouseOverElement).perform();
 
 	}
+	
+	
+	public void sendValues(String locator, String vaules) {
+
+		System.out.println("Mouse Over locator : " + SeleniumDriver.OR.getProperty(locator));
+
+		if (locator.endsWith("_XPATH")) {
+			driver.findElement(By.xpath(SeleniumDriver.OR.getProperty(locator))).sendKeys(vaules);
+		} else if (locator.endsWith("_ID")) {
+			driver.findElement(By.id(SeleniumDriver.OR.getProperty(locator))).sendKeys(vaules);
+		} else if (locator.endsWith("_CSS")) {
+			driver.findElement(By.cssSelector(SeleniumDriver.OR.getProperty(locator))).sendKeys(vaules);
+		} else if (locator.endsWith("_LINK")) {
+			driver.findElement(By.linkText(SeleniumDriver.OR.getProperty(locator))).sendKeys(vaules);
+		}
+
+	}
+
 
 	public void selectOptions(String locator, String option) {
 

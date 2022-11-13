@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-13T02:15:38 AEDT" name="Default suite" finished-at="2022-11-13T02:16:37 AEDT" duration-ms="59143">
+  <suite started-at="2022-11-13T02:19:52 AEDT" name="Default suite" finished-at="2022-11-13T02:21:10 AEDT" duration-ms="77736">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-13T02:15:38 AEDT" name="Default test" finished-at="2022-11-13T02:16:37 AEDT" duration-ms="59143">
+    <test started-at="2022-11-13T02:19:52 AEDT" name="Default test" finished-at="2022-11-13T02:21:10 AEDT" duration-ms="77736">
       <class name="runners.GumtreeRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:15:38 AEDT" name="setUpClass" finished-at="2022-11-13T02:15:38 AEDT" duration-ms="799" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:19:52 AEDT" name="setUpClass" finished-at="2022-11-13T02:19:53 AEDT" duration-ms="716" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@16391278]]>
+                <![CDATA[org.testng.TestRunner@71e7830a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:15:38 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T02:15:56 AEDT" duration-ms="17208" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:19:53 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T02:20:27 AEDT" duration-ms="33650" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:15:56 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T02:16:12 AEDT" duration-ms="16088" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:20:27 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T02:20:36 AEDT" duration-ms="9361" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:16:12 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T02:16:36 AEDT" duration-ms="24672" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:20:36 AEDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-11-13T02:21:10 AEDT" duration-ms="33651" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -84,14 +84,14 @@ at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
 at pages.base.BaseTest.selectOptions(BaseTest.java:71)
 at page.objects.CarsVansUtePage.selectModel(CarsVansUtePage.java:12)
 at stepdefinitions.ToyotaSearch.select_rav4_from_the_model(ToyotaSearch.java:53)
-at ✽.select "Q123" from the model(file:///C:/Users/SugNithi/eclipse-workspace/CucumberGumtree/src/test/resources/features/findtoyotacars.feature:14)
+at ✽.select "Q123" from the model(file:///C:/Users/SugNithi/eclipse-workspace/CucumberGumtree/src/test/resources/features/findcarresults.feature:14)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:16:36 AEDT" name="tearDownClass" finished-at="2022-11-13T02:16:37 AEDT" duration-ms="328" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.GumtreeRunner@710636b0]" started-at="2022-11-13T02:21:10 AEDT" name="tearDownClass" finished-at="2022-11-13T02:21:10 AEDT" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

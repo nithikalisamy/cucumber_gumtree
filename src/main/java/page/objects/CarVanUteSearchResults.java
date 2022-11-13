@@ -6,7 +6,7 @@ public class CarVanUteSearchResults extends BaseTest {
 
 	public String returnFirstSearchResult() {
 
-		String text = getElementText("firstRealEstateResult_XPATH");
+		String text = getElementText("firstSearchResult_XPATH");
 		return text;
 	}
 

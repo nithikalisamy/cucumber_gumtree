@@ -16,3 +16,4 @@ Feature: Check the the highest property price in the given range
     Examples: 
       | Max     |
       | 1000000 |
+      |  500000 |

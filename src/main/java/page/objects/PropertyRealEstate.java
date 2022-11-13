@@ -6,7 +6,7 @@ public class PropertyRealEstate extends BaseTest{
 	
 	public String readFirstRealEstateSerachResults()
 	{
-		String text = getElementText("firstRealEstateResult_XPATH");
+		String text = getElementText("firstSearchResult_XPATH");
 		return text;
 	}
 
